@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { MdSearch, MdArrowDropDown } from "react-icons/md";
 
@@ -27,7 +28,6 @@ const SearchInput = styled.input`
     padding: 13px;
     margin-right: 12px;
     font-size: 18px;
-    font-weight: 700;
     line-height: 24px;
     color: #000000;
 `;
@@ -87,10 +87,30 @@ const StyledSearchHistory = styled.div`
 
 function SearchBar({ onSubmit }) {
 
+    const node = useRef();
+    
     const [showHistory, setShowHistory] = useState(false);
 
     const onClick = () => {
         setShowHistory(!showHistory);
+    };
+
+    useEffect(() => {
+        // add when mounted
+        document.addEventListener("mousedown", handleClick);
+        // return function to be called when unmounted
+        return () => {
+          document.removeEventListener("mousedown", handleClick);
+        };
+    }, []);
+
+    const handleClick = e => {
+        if (node.current ? node.current.contains(e.target): null) {
+            // inside click
+            return;
+        }
+        // outside click 
+        setShowHistory(false);
     };
 
     return (
@@ -99,7 +119,7 @@ function SearchBar({ onSubmit }) {
                 <SearchInput onClick={onClick}/>
                 <MdArrowDropDown />
                 <SearchButton><MdSearch /></SearchButton>
-                { showHistory ? <StyledSearchHistory/> : null}
+                { showHistory ? <StyledSearchHistory ref={node}/> : null}
             </SearchInputForm>
             <StyledBanner>
                 HWP 문서도 브라우저에서 바로 확인하세요!

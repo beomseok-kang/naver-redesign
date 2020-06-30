@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import userImg from '../../img/user.gif';
 import jrNaverColored from '../../img/jr-naver_colored.png'
@@ -129,11 +129,31 @@ const StyledLinksList = styled.ul`
 
 function Header() {
 
+    const node = useRef();
+
     const [showApps, setShowApps] = useState(false);
 
     const onClick = () => {
         setShowApps(!showApps);
     }
+
+    useEffect(() => {
+        // add when mounted
+        document.addEventListener("mousedown", handleClick);
+        // return function to be called when unmounted
+        return () => {
+          document.removeEventListener("mousedown", handleClick);
+        };
+    }, []);
+
+    const handleClick = e => {
+        if (node.current ? node.current.contains(e.target): null) {
+            // inside click
+            return;
+        }
+        // outside click 
+        setShowApps(false);
+    };
 
     return (
         <StyledHeaderWrapper>
@@ -148,7 +168,7 @@ function Header() {
                 <StyledIcon onClick={onClick}><MdApps /></StyledIcon>
                 <StyledUserIcon>User Icon</StyledUserIcon>
                 {showApps
-                    ? <StyledLinksList>
+                    ? <StyledLinksList ref={node}>
                         <li><a className="text-green" href="https://kin.naver.com/">지식iN</a></li>
                         <li><a className="text-green" href="https://shopping.naver.com/">쇼핑</a></li>
                         <li><a className="text-green" href="https://order.pay.naver.com/home">Pay</a></li>
