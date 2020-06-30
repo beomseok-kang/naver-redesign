@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import LogoContainer from './components/container/LogoContainer';
+import SearchBarContainer from './components/container/SearchBarContainer';
+import HeaderContainer from './components/container/HeaderContainer';
+import FooterContainer from './components/container/FooterContainer';
 
 function App() {
+
+  useEffect(() => {
+    console.log('Cat is cute for sure.');
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderContainer />
+      <LogoContainer />
+      <SearchBarContainer />
+      <FooterContainer />
+    </>
   );
 }
 
