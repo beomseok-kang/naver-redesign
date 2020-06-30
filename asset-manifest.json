@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/naver-redesign/static/css/main.816d6bfd.chunk.css",
+    "main.js": "/naver-redesign/static/js/main.0558b340.chunk.js",
+    "main.js.map": "/naver-redesign/static/js/main.0558b340.chunk.js.map",
+    "runtime-main.js": "/naver-redesign/static/js/runtime-main.17c374a0.js",
+    "runtime-main.js.map": "/naver-redesign/static/js/runtime-main.17c374a0.js.map",
+    "static/js/2.b10848ee.chunk.js": "/naver-redesign/static/js/2.b10848ee.chunk.js",
+    "static/js/2.b10848ee.chunk.js.map": "/naver-redesign/static/js/2.b10848ee.chunk.js.map",
+    "index.html": "/naver-redesign/index.html",
+    "precache-manifest.5a02c4f288097a17d74492498e381c65.js": "/naver-redesign/precache-manifest.5a02c4f288097a17d74492498e381c65.js",
+    "service-worker.js": "/naver-redesign/service-worker.js",
+    "static/css/main.816d6bfd.chunk.css.map": "/naver-redesign/static/css/main.816d6bfd.chunk.css.map",
+    "static/js/2.b10848ee.chunk.js.LICENSE.txt": "/naver-redesign/static/js/2.b10848ee.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/naver-redesign/static/media/logo.72c946ce.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17c374a0.js",
+    "static/js/2.b10848ee.chunk.js",
+    "static/css/main.816d6bfd.chunk.css",
+    "static/js/main.0558b340.chunk.js"
+  ]
+}
