@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/naver-redesign/static/css/main.816d6bfd.chunk.css",
-    "main.js": "/naver-redesign/static/js/main.4628feb7.chunk.js",
-    "main.js.map": "/naver-redesign/static/js/main.4628feb7.chunk.js.map",
+    "main.js": "/naver-redesign/static/js/main.27571850.chunk.js",
+    "main.js.map": "/naver-redesign/static/js/main.27571850.chunk.js.map",
     "runtime-main.js": "/naver-redesign/static/js/runtime-main.438725b1.js",
     "runtime-main.js.map": "/naver-redesign/static/js/runtime-main.438725b1.js.map",
     "static/js/2.fef88969.chunk.js": "/naver-redesign/static/js/2.fef88969.chunk.js",
     "static/js/2.fef88969.chunk.js.map": "/naver-redesign/static/js/2.fef88969.chunk.js.map",
     "index.html": "/naver-redesign/index.html",
-    "precache-manifest.69dcaeb6c177f2ef9061428f1530ec7b.js": "/naver-redesign/precache-manifest.69dcaeb6c177f2ef9061428f1530ec7b.js",
+    "precache-manifest.18e04d70d3b8b4b4069a5ef9cbbb7c7f.js": "/naver-redesign/precache-manifest.18e04d70d3b8b4b4069a5ef9cbbb7c7f.js",
     "service-worker.js": "/naver-redesign/service-worker.js",
     "static/css/main.816d6bfd.chunk.css.map": "/naver-redesign/static/css/main.816d6bfd.chunk.css.map",
     "static/js/2.fef88969.chunk.js.LICENSE.txt": "/naver-redesign/static/js/2.fef88969.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.438725b1.js",
     "static/js/2.fef88969.chunk.js",
     "static/css/main.816d6bfd.chunk.css",
-    "static/js/main.4628feb7.chunk.js"
+    "static/js/main.27571850.chunk.js"
   ]
 }
