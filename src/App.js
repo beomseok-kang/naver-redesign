@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import HomePage from './HomePage';
-import { Route } from 'react-router-dom';
 import SearchPage from './SearchPage';
 
 function App() {
@@ -11,9 +10,6 @@ function App() {
 
   return (
     <>
-      <Route path="/" component={HomePage} exact/>
-      <Route path="/search" component={SearchPage} />
-      <Route />
     </>
   );
 }
