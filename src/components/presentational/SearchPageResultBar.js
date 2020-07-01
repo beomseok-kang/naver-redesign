@@ -53,6 +53,7 @@ const StyledRightWrapper = styled.div`
 const StyledRightA = styled.a`
     display: block;
     color: #444444;
+    font-weight: bold;
     padding: 16px 8px;
     text-decoration: none;
     font-size: 13px;
@@ -75,8 +76,8 @@ function SearchPageResultBar() {
                 <li><a href="#">카페</a></li>
             </StyledTabList>
             <StyledRightWrapper>
-                <StyledRightA>도움말</StyledRightA>
-                <StyledRightA>원본반영</StyledRightA>
+                <StyledRightA href="#">도움말</StyledRightA>
+                <StyledRightA href="#">원본반영</StyledRightA>
             </StyledRightWrapper>
         </StyledInnerWrapper>
     </StyledTabWrapper>

@@ -175,6 +175,9 @@ const StyledTitle = styled.a`
     font-size: 14px;
     line-height: 26px;
     padding-top: 4px;
+    &:hover{
+        text-decoration: underline;
+    }
 `;
 
 const StyledFlexWrapper = styled.div`
@@ -212,7 +215,7 @@ function SectionListItem ({
     return (
         <StyledSectionListItem>
             <StyledDomain>{domainUrl}</StyledDomain>
-            <StyledTitle>{title + ' - ' + siteName}</StyledTitle>
+            <StyledTitle href="#">{title + ' - ' + siteName}</StyledTitle>
             <StyledFlexWrapper>
                 {thumbnailUrl
                     ? <StyledThumbnail

@@ -53,7 +53,7 @@ const StyledOrderedList = styled.ol`
                     content: "NEW";
                     font-size: 10px;
                     line-height: 1;
-                    color: #fb5151; 
+                    color: #fb5151;
                 }
             }
         }
