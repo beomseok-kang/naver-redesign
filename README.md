@@ -20,3 +20,13 @@ Need to do:
 
 Need to do:
  1. Connect Search API
+
+ ### Ver 0.0.4
+ Search Page building done
+
+ You can check it at: https://beomseok-kang.github.io/naver-redesign/search
+
+ Need to do:
+ 1. Connect Search API (maybe)
+ 2. Connect redux so that the search history is not lost
+ 3. Connect the link to search page.

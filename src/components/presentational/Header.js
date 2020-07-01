@@ -67,7 +67,7 @@ const StyledLinkA = styled.a`
     padding: 13px;
 `;
 
-const StyledIcon = styled.div`
+export const StyledIcon = styled.div`
     display: flex;
     align-items: center;
     color: #666666;
@@ -77,7 +77,7 @@ const StyledIcon = styled.div`
     cursor: pointer;
 `;
 
-const StyledUserIcon = styled.div`
+export const StyledUserIcon = styled.div`
     cursor: pointer;
     text-indent: -9999px;
     margin: 13px;
@@ -90,8 +90,9 @@ const StyledUserIcon = styled.div`
     border: 1px solid rgba(0,0,0,0.08);
 `;
 
-const StyledLinksList = styled.ul`
+export const StyledLinksList = styled.ul`
     position: absolute;
+    background: #FFFFFF;
     top: 100%;
     margin: 0;
     padding: 0;

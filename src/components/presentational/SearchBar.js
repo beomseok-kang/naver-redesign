@@ -175,10 +175,10 @@ function SearchBar({ showBanner }) {
         setShowHistory(false);
     };
 
-    async function onChange (e) {
+    const onChange = e => {
         setValue(e.target.value);
-        const data = await getAutoComplete(e.target.value);
-        console.log(data);
+        // const data = await getAutoComplete(e.target.value);
+        // console.log(data);
     };
 
     const onSubmit = e => {
