@@ -24,7 +24,7 @@ function Logo ({ isSmall }) {
     const small = isSmall ? 'small' : null ;
 
     return (
-        <LogoA href="/" className={small}/>
+        <LogoA href="/naver-redesign" className={small}/>
     );
 }
 
