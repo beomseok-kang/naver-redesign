@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import LogoContainer from './components/container/LogoContainer';
-import SearchBarContainer from './components/container/SearchBarContainer';
-import HeaderContainer from './components/container/HeaderContainer';
-import FooterContainer from './components/container/FooterContainer';
+import HomePage from './HomePage';
+import { Route } from 'react-router-dom';
+import SearchPage from './SearchPage';
 
 function App() {
 
@@ -12,10 +11,9 @@ function App() {
 
   return (
     <>
-      <HeaderContainer />
-      <LogoContainer />
-      <SearchBarContainer />
-      <FooterContainer />
+      <Route path="/" component={HomePage} exact/>
+      <Route path="/search" component={SearchPage} />
+      <Route />
     </>
   );
 }

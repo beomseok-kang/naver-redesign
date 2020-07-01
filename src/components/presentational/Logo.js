@@ -12,6 +12,7 @@ const LogoA = styled.a`
     width: 315px;
 `;
 
+
 function Logo () {
     return (
         <LogoA href="#" />

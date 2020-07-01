@@ -130,6 +130,7 @@ const StyledLinksList = styled.ul`
 function Header() {
 
     const node = useRef();
+    const node2 = useRef();
 
     const [showApps, setShowApps] = useState(false);
 
@@ -150,6 +151,8 @@ function Header() {
         if (node.current ? node.current.contains(e.target): null) {
             // inside click
             return;
+        } else if (node2.current ? node2.current.contains(e.target): null) {
+            return;
         }
         // outside click 
         setShowApps(false);
@@ -165,7 +168,7 @@ function Header() {
                 <StyledLinkA href="https://mail.naver.com/">메일</StyledLinkA>
                 <StyledLinkA href="https://cafe.naver.com/">카페</StyledLinkA>
                 <StyledLinkA href="https://blog.naver.com/">블로그</StyledLinkA>
-                <StyledIcon onClick={onClick}><MdApps /></StyledIcon>
+                <StyledIcon ref={node2} onClick={onClick}><MdApps /></StyledIcon>
                 <StyledUserIcon>User Icon</StyledUserIcon>
                 {showApps
                     ? <StyledLinksList ref={node}>
