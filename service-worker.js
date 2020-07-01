@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/naver-redesign/precache-manifest.36f8ce70099747bca4ae23009f70d473.js"
+  "/naver-redesign/precache-manifest.69dcaeb6c177f2ef9061428f1530ec7b.js"
 );
 
 self.addEventListener('message', (event) => {
