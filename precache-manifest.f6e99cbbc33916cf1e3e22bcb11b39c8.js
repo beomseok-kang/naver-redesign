@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7fff0dc461a99df100b05a852bbbc487",
+    "revision": "61d058b35db39b2a4eaa22955241dd43",
     "url": "/naver-redesign/index.html"
   },
   {
-    "revision": "785104d50d56f9d5609d",
+    "revision": "ae0a1bc86cf54520e4ff",
     "url": "/naver-redesign/static/css/main.816d6bfd.chunk.css"
   },
   {
-    "revision": "b2f91d168b1c6b17159a",
-    "url": "/naver-redesign/static/js/2.180009ca.chunk.js"
+    "revision": "e91df3e8380f3e637cd8",
+    "url": "/naver-redesign/static/js/2.a261c4b2.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/naver-redesign/static/js/2.180009ca.chunk.js.LICENSE.txt"
+    "url": "/naver-redesign/static/js/2.a261c4b2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "785104d50d56f9d5609d",
-    "url": "/naver-redesign/static/js/main.c12e8ab0.chunk.js"
+    "revision": "ae0a1bc86cf54520e4ff",
+    "url": "/naver-redesign/static/js/main.ae3178e9.chunk.js"
   },
   {
     "revision": "5b91f3afc93348023a21",
