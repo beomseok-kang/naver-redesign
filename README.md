@@ -2,7 +2,7 @@
 
 You can check the website at:
 
-https://beomseok-kang/github.io/naver-redesign/
+https://beomseok-kang.github.io/naver-redesign/
 
 ## naver - redesign
 
