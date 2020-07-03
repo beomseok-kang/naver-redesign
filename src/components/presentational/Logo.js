@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import img from '../../img/logo.png';
-import { Link } from 'react-router-dom';
+import { useHistory } from "react-router";
 
-const LogoA = styled.a`
-    display: block;
+
+const LogoImg = styled.div`
+    cursor: pointer;
     background: url(${img});
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,10 +22,14 @@ const LogoA = styled.a`
 
 function Logo ({ isSmall }) {
 
+    const routerHistory = useHistory();
+
     const small = isSmall ? 'small' : null ;
 
+    const onClick = () => routerHistory.push({ pathname: '/' });
+
     return (
-        <LogoA href="/naver-redesign" className={small}/>
+        <LogoImg onClick={onClick} className={small}/>
     );
 }
 

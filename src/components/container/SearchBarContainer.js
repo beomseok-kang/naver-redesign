@@ -8,11 +8,11 @@ const StyledSearchBarContainer = styled.div`
     justify-content: center;
 `;
 
-function SearchBarContainer({ showBanner }) {
+function SearchBarContainer({ showBanner, inputVal }) {
 
   return (
         <StyledSearchBarContainer>
-            <SearchBar showBanner={showBanner}/>
+            <SearchBar showBanner={showBanner} inputVal={inputVal ? inputVal : null}/>
         </StyledSearchBarContainer>
   );
 }

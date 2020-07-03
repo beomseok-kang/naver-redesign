@@ -1,14 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
-import SearchPageHeaderContainer from './components/container/SearchPageHeaderContainer';
 import SearchPageResultContainer from './components/container/SearchPageResultContainer';
+import SearchPageHeader from './components/presentational/SearchPageHeader';
 
 
-function SearchPage() {
+function SearchPage({ match }) {
+
+  const { inputVal } = match.params;
 
   return (
       <>
-        <SearchPageHeaderContainer />
+        <SearchPageHeader inputVal={inputVal}/>
         <SearchPageResultContainer />
       </>
   );

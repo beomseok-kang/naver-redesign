@@ -4,7 +4,7 @@ import { MdSearch, MdArrowDropDown } from "react-icons/md";
 import starImg from '../../img/atcmp_spat_v7.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { addItem, toggleStar, deleteItem } from '../../modules/historyItem';
-import { getAutoComplete } from '../../APIs/AutoComplete';
+import { useHistory } from "react-router";
 
 const Wrapper = styled.div`
 `;
@@ -140,7 +140,9 @@ const StyledHistoryDeleteA = styled.a`
 //     background: #FFFFFF;
 // `;
 
-function SearchBar({ showBanner }) {
+function SearchBar({ showBanner, inputVal }) {
+
+    const routerHistory = useHistory();
 
     const historyItems = useSelector(state => state);
 
@@ -150,7 +152,7 @@ function SearchBar({ showBanner }) {
     const node2 = useRef();
     
     const [showHistory, setShowHistory] = useState(false);
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState(inputVal ? inputVal : '');
     const [showDelete, setShowDelete] = useState(false);
 
     const onClickSearchBar = () => {
@@ -183,7 +185,14 @@ function SearchBar({ showBanner }) {
 
     const onSubmit = e => {
         e.preventDefault();
-        value ? dispatch(addItem(value)) : console.log('no value');
+        if (value) {
+            dispatch(addItem(value))
+            routerHistory.push({
+                pathname: `/search/${value}`,
+            })
+        } else {
+            alert('Please put in any value inside the input.');
+        }
         setValue('');
     }
 

@@ -4,6 +4,7 @@ import Logo from './Logo';
 import SearchBarContainer from '../container/SearchBarContainer';
 import { StyledUserIcon, StyledLinksList, StyledIcon } from './Header';
 import { MdApps, MdKeyboardArrowRight } from 'react-icons/md'
+import SearchBar from './SearchBar';
 
 const StyledSearchPageHeader = styled.header`
     display: flex;
@@ -29,7 +30,7 @@ const StyledRightWrapper = styled.div`
     justify-content: flex-end;
 `;
 
-function SearchPageHeader() {
+function SearchPageHeader({ inputVal }) {
   
     const node = useRef();
     const node2 = useRef();
@@ -65,7 +66,9 @@ function SearchPageHeader() {
         <StyledSearchPageHeader>
             <StyledLeftWrapper>
                 <Logo isSmall />
-                <SearchBarContainer showBanner={false}/>
+                <div style = {{ height: '56px' }}>
+                    <SearchBar showBanner={false} inputVal={inputVal ? inputVal : null}/>
+                </div>
             </StyledLeftWrapper>
             <StyledRightWrapper>
                 <StyledUserIcon />

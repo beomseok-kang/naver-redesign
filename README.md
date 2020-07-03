@@ -1,5 +1,9 @@
 # The project is built by React.
 
+You can check the website at:
+
+https://beomseok-kang/github.io/naver-redesign/
+
 ## naver - redesign
 
 ### Ver 0.0.1
@@ -30,3 +34,14 @@ Need to do:
  1. Connect Search API (maybe)
  2. Connect redux so that the search history is not lost
  3. Connect the link to search page.
+
+ ### Ver 0.0.5
+ Search Page search result onto the router
+
+ onSubmit: push the history to /search/:inputVal
+
+ serch history reserves after clicking the logo (after going back to home)
+
+ Need to do:
+  1. Connect Search API (maybe)
+  2. Connect Search API and result (maybe)
